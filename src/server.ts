@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.use("/categories", categoriesRoute);
 
-app.get("/heathcheck", (request, response) => {
+app.get("/healthcheck", (request, response) => {
     return response.json({message: "OK!"});
 })
 
